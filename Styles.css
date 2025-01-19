@@ -7,4 +7,37 @@
 body {
   border: 5px solid rgb(0, 0, 0);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  border: 2px solid red;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 15rem;
+  height: 20rem;
+  border: 2px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card p {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+img {
+  width: 12rem;
+}
+
+.scissors-img {
+  transform: rotate(90deg);
 }
