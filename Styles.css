@@ -10,13 +10,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
   border: 2px solid red;
+  max-width: 80rem;
   padding: 10px;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
