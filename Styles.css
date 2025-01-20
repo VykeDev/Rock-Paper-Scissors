@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  border: 2px solid red;
   max-width: 80rem;
   padding: 10px;
   display: flex;
@@ -26,7 +25,7 @@ body {
 .card {
   width: 15rem;
   height: 20rem;
-  border: 2px solid blue;
+
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -47,7 +46,7 @@ img {
 
 .text {
   font-size: 2rem;
-  border: 2px solid rosybrown;
+
   min-width: 30rem;
   gap: 2rem;
   display: none;
