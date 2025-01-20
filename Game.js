@@ -44,7 +44,6 @@ scissors.addEventListener("mouseover", () => {
   scissors.style.backgroundColor = "black";
   text.style.color = "white";
 });
-
 scissors.addEventListener("mouseout", () => {
   const img = scissors.querySelector("img");
   const text = scissors.querySelector("p");
@@ -52,4 +51,13 @@ scissors.addEventListener("mouseout", () => {
   img.src = "elements/hand-scissors-regular.svg";
   scissors.style.backgroundColor = "white";
   text.style.color = "black";
+});
+
+const cards = document.querySelectorAll(".card");
+const text = document.querySelector(".text");
+
+cards.forEach((card, index) => {
+  card.onclick = () => {
+    text.style.display = "flex";
+  };
 });

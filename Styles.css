@@ -44,3 +44,19 @@ img {
 .scissors-img {
   transform: rotate(90deg);
 }
+
+.text {
+  font-size: 2rem;
+  border: 2px solid rosybrown;
+  min-width: 30rem;
+  gap: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moves {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
