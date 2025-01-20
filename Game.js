@@ -55,9 +55,36 @@ scissors.addEventListener("mouseout", () => {
 
 const cards = document.querySelectorAll(".card");
 const text = document.querySelector(".text");
-
+let sb = 0;
 cards.forEach((card, index) => {
+  const player = document.querySelector("#player");
+  const computer = document.querySelector("#computer");
+  const score = document.querySelector("#score");
+  const options = ["Rock", "Paper", "Scissors"];
+
   card.onclick = () => {
+    let randomNumber = Math.floor(Math.random() * 3);
     text.style.display = "flex";
+    player.textContent = `you: ${options[index]}`;
+    computer.textContent = `computer: ${options[randomNumber]}`;
+    score.textContent = `score: ${sb}`;
+    game(options[randomNumber], options[index]);
   };
+  const outcomes = {
+    Rock: "Scissors",
+    Scissors: "Paper",
+    Paper: "Rock",
+  };
+  function game(player1, player2) {
+    console.log(`c: ${player1}`);
+    console.log(`p: ${player2}`);
+    if (player1 == player2) {
+      return console.log("tie");
+    }
+    if (outcomes[player1] == player2) {
+      return console.log("computer wins");
+    }
+    sb++;
+    score.textContent = `score: ${sb}`;
+  }
 });
